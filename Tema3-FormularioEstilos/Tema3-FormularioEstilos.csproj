@@ -10,7 +10,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="foto.jpg" />
+    <None Remove="info.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="IconoFormulario.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="foto.jpg" />
+    <Resource Include="info.png" />
   </ItemGroup>
 
 </Project>

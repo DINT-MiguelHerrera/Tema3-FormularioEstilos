@@ -19,8 +19,8 @@
             <ColumnDefinition Width="3*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
-        <TextBlock Text="Formulario" Grid.ColumnSpan="2" TextAlignment="Center" VerticalAlignment="Center" FontSize="40" FontWeight="Bold" Height="53"></TextBlock>
-        <Border BorderBrush="Black" BorderThickness="3" CornerRadius="3" Grid.Row="1" Grid.Column="0" Margin="10,10,10,10" Background="#FFFFA142">
+        <TextBlock Style="{StaticResource titulo}"></TextBlock>
+        <Border Style="{StaticResource bordeFormulario1}">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition></RowDefinition>
@@ -32,33 +32,33 @@
                     <ColumnDefinition Width="177*"></ColumnDefinition>
                     <ColumnDefinition Width="20*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <TextBlock Text="Nombre" Grid.Column="0" VerticalAlignment="Center" Margin="5" Height="16"/>
-                <TextBox Grid.Row="0" Grid.Column="1" Margin="5"></TextBox>
-                <Image Source="/info.png" Grid.Row="0" Grid.Column="2" ToolTip="Máximo 100 caracteres"></Image>
-                <TextBlock Text="Edad" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Margin="5" Height="16"></TextBlock>
-                <TextBox Grid.Row="1" Grid.Column="1" Margin="5"></TextBox>
-                <Image Source="/info.png" Grid.Row="1" Grid.Column="2" ToolTip="Número entero entre 0 y 100"></Image>
-                <TextBlock Text="Dirección" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Margin="5" Height="16"></TextBlock>
-                <TextBox Grid.Row="2" Grid.Column="1" Margin="5"></TextBox>
-                <Image Source="/info.png" Grid.Row="2" Grid.Column="2" ToolTip="Incluir el código postal"></Image>
+                <TextBlock Style="{StaticResource textBlockNombre}"/>
+                <TextBox Style="{StaticResource textBoxNombre}"></TextBox>
+                <Image Style="{StaticResource imagenNombre}"/>
+                <TextBlock Style="{StaticResource textBlockEdad}"></TextBlock>
+                <TextBox Style="{StaticResource textBoxEdad}"></TextBox>
+                <Image Style="{StaticResource imagenEdad}"/>
+                <TextBlock Style="{StaticResource textBlockDireccion}"></TextBlock>
+                <TextBox Style="{StaticResource textBoxDireccion}"></TextBox>
+                <Image Style="{StaticResource imagenDireccion}"/>
             </Grid>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="3" CornerRadius="3" Grid.Row="2" Grid.Column="0" Margin="10,10,10,10" Background="LightGoldenrodYellow">
+        <Border Style="{StaticResource bordeFormulario2}">
             <DockPanel LastChildFill="True">
-                <GroupBox BorderBrush="Blue" BorderThickness="1" Margin="10, 10, 70, 10" Header="Aficiones">
-                    <StackPanel Margin="10, 10, 70, 10" VerticalAlignment="Center">
-                        <CheckBox Content="Hacer Deporte"></CheckBox>
-                        <CheckBox Content="Viajar"></CheckBox>
-                        <CheckBox Content="Ver series"></CheckBox>
-                        <CheckBox Content="Leer cómics"></CheckBox>
+                <GroupBox Style="{StaticResource groupBoxCheckBox}">
+                    <StackPanel Style="{StaticResource stackPanelCheckBox}">
+                        <CheckBox Style="{StaticResource checkBoxHacerDeporte}"></CheckBox>
+                        <CheckBox Style="{StaticResource checkBoxViajar}"></CheckBox>
+                        <CheckBox Style="{StaticResource checkBoxVerSeries}"></CheckBox>
+                        <CheckBox Style="{StaticResource checkBoxLeerCómics}"></CheckBox>
                     </StackPanel>
                 </GroupBox>
-                <GroupBox BorderBrush="Blue" BorderThickness="1" Margin="10" Header="Estado Civil">
-                    <StackPanel Margin="10, 10, 70, 10" VerticalAlignment="Center">
-                        <RadioButton Content="Soltero"></RadioButton>
-                        <RadioButton Content="Casado"></RadioButton>
-                        <RadioButton Content="Divorciado"></RadioButton>
-                        <RadioButton Content="Viudo"></RadioButton>
+                <GroupBox Style="{StaticResource groupBoxRadioButton}">
+                    <StackPanel Style="{StaticResource stackPanelRadioButton}">
+                        <RadioButton Style="{StaticResource radioButtonSoltero}"></RadioButton>
+                        <RadioButton Style="{StaticResource radioButtonCasado}"></RadioButton>
+                        <RadioButton Style="{StaticResource radioButtonDivorciado}"></RadioButton>
+                        <RadioButton Style="{StaticResource radioButtonViudo}"></RadioButton>
                     </StackPanel>
                 </GroupBox>
 
@@ -68,11 +68,11 @@
 
             </DockPanel>
         </Border>
-        <Image Source="/foto.jpg" Grid.Column="1" Grid.Row="1" Grid.RowSpan="3" />
-        <TextBlock Text="Miguel Herrera" Grid.Row="4" Grid.Column="0" FontSize="20" VerticalAlignment="Top" Margin="5,14,5,0" Height="27"></TextBlock>
-        <StackPanel Grid.Row="4" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="40" Width="220">
-            <Button Content="Aceptar" Margin="5" Height="30" Width="100"></Button>
-            <Button Content="Cancelar" Margin="5" Height="30" Width="100" ></Button>
+        <Image Style="{StaticResource imagenPrincipal}" />
+        <TextBlock Style="{StaticResource textBlockAutor}"></TextBlock>
+        <StackPanel Style="{StaticResource stackPanelBotones}">
+            <Button Style="{StaticResource botonAceptar}"></Button>
+            <Button Style="{StaticResource botonCancelar}"></Button>
         </StackPanel>
     </Grid>
 </Window>

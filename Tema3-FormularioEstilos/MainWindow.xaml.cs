@@ -24,5 +24,7 @@ namespace Tema3_FormularioEstilos
         {
             InitializeComponent();
         }
+
+
     }
 }
